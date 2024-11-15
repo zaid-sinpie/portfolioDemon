@@ -1,14 +1,13 @@
 import Navbar from "./componets/Navbar";
-import Sidebar from "./componets/Sidebar";
+import Hero from "./componets/Hero";
+import Skills from "./componets/Skills";
 
 function App() {
   return (
-    <section className="w-screen h-screen flex justify-end items-center bg-dark">
+    <section className="w-full h-auto flex flex-col justify-start items-center bg-dark relative px-20 max-sm:px-4 max-2xl:px-10">
       <Navbar />
-      <Sidebar />
-      <div className="h-full flex justify-center items-center relative">
-        <h1 className="text-text">Block #1</h1>
-      </div>
+      <Hero />
+      <Skills />
     </section>
   );
 }
