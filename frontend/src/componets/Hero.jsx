@@ -36,21 +36,21 @@ const Hero = () => {
         </div>
         <div className="flex justify-center items-center gap-5">
           <ButtonPlane>contact me</ButtonPlane>
-          {/* <TextButton>ask a Question</TextButton> */}
-          <div className="flex justify-around items-center gap-4 text-textYellow text-xl">
-            <a href="#">
-              <i class="fa-solid fa-code hover:text-text"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-github hover:text-text"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-linkedin-in hover:text-text"></i>
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-basketball hover:text-text"></i>
-            </a>
-          </div>
+          <TextButton>Resume</TextButton>
+        </div>
+        <div className="flex justify-around items-center gap-4 text-textYellow text-xl">
+          <a href="#" className="cursor-cursorHover">
+            <i className="fa-solid fa-code hover:text-text"></i>
+          </a>
+          <a href="#" className="cursor-cursorHover">
+            <i className="fa-brands fa-github hover:text-text"></i>
+          </a>
+          <a href="#" className="cursor-cursorHover">
+            <i className="fa-brands fa-linkedin-in hover:text-text"></i>
+          </a>
+          <a href="#" className="cursor-cursorHover">
+            <i className="fa-solid fa-basketball hover:text-text"></i>
+          </a>
         </div>
       </div>
     </section>

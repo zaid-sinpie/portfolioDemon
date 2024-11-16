@@ -25,7 +25,7 @@ export const Button1 = ({ children, ...props }) => {
   return (
     <button
       {...props}
-      className="text-text border px-4 py-2 text-sm tracking-normal max-sm:hidden max-xl:hidden hover:underline"
+      className="text-text border px-4 py-2 text-sm tracking-normal cursor-cursorHover max-sm:hidden max-xl:hidden hover:underline"
     >
       {children}
     </button>
@@ -35,7 +35,7 @@ export const Button1 = ({ children, ...props }) => {
 export const ButtonPlane = ({ children, ...props }) => {
   return (
     <button
-      className="text-black uppercase border border-textYellow bg-textYellow hover:bg-black hover:text-textYellow px-5 py-2 max-sm:text-xs"
+      className="text-black uppercase border border-textYellow bg-textYellow hover:bg-black hover:text-textYellow px-5 py-2 max-sm:text-xs cursor-cursorHover"
       {...props}
     >
       {children}
@@ -45,7 +45,10 @@ export const ButtonPlane = ({ children, ...props }) => {
 
 export const TextButton = ({ children, ...props }) => {
   return (
-    <button className="uppercase text-text hover:text-textYellow border border-text hover:border-textYellow px-5 py-2 max-sm:text-xs transition-all hover:tracking-wider" {...props}>
+    <button
+      className="uppercase cursor-cursorHover text-text hover:text-textYellow border border-text hover:border-textYellow px-5 py-2 max-sm:text-xs transition-all hover:tracking-wider"
+      {...props}
+    >
       <i className="fa-solid fa-arrow-right"></i> {children}
     </button>
   );

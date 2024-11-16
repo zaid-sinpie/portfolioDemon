@@ -4,4 +4,6 @@
 
 body {
   background: #000;
+  cursor: url("/cursor.svg"), auto;
+  /* cursor: url("/herta.gif"), auto; */
 }

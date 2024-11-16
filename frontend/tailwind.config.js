@@ -20,6 +20,10 @@ export default {
         text: "#fff",
         bgBlur: "#af807966",
       },
+      cursor:{
+        cursor1:"url('/cursor.svg') 12 12,auto",
+        cursorHover:"url('/cursorHover.svg') 15 15,auto"
+      }
     },
   },
   plugins: [],

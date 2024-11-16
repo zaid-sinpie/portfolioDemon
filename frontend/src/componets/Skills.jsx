@@ -3,7 +3,7 @@ import { dataForSkills } from "../data";
 
 const Skills = () => {
   return (
-    <section className="w-full h-screen max-sm:h-auto flex justify-center items-center">
+    <section className="w-full h-screen max-2xl:h-auto max-sm:h-auto flex justify-center items-center">
       <div className="h-auto flex flex-wrap gap-4">
         {dataForSkills.map((item, index) => {
           return (

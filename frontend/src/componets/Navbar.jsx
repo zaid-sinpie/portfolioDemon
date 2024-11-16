@@ -32,7 +32,7 @@ const Navbar = () => {
     <div className="w-full fixed top-0 left-0 backdrop-blur-lg z-20 animate-slideDown">
       <header className="w-full flex justify-between items-center p-5 tracking-[5px]">
         <ul>
-          <h1 className="text-xl text-textYellow font-semibold cursor-pointer">
+          <h1 className="text-xl text-textYellow font-semibold cursor-cursorHover transition-all">
             DemonLord
           </h1>
         </ul>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 <li key={index}>
                   <a
                     href={item.link}
-                    className="font-semibold hover:underline underline-offset-4"
+                    className="font-semibold hover:underline cursor-cursorHover underline-offset-4"
                   >
                     {item.title}
                   </a>
