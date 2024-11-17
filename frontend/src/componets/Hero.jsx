@@ -20,7 +20,7 @@ const Hero = () => {
           );
         })}
       </div>
-      <div className="w-[60%] max-sm:w-full flex flex-col gap-4 justify-around items-start p-2">
+      <div className="w-[60%] max-sm:w-full max-sm:mt-[2rem] flex flex-col gap-4 justify-around items-start p-2">
         <div>
           <h1 className="text-textYellow text-5xl font-bold">
             Hii there, <br /> I'm Demon Lord

@@ -43,6 +43,17 @@ export const ButtonPlane = ({ children, ...props }) => {
   );
 };
 
+export const ButtonPlaneFull = ({ children, ...props }) => {
+  return (
+    <button
+      className="text-black uppercase border border-textYellow bg-textYellow hover:bg-black hover:text-textYellow px-5 py-2 max-sm:text-xs cursor-cursorHover w-full"
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
+
 export const TextButton = ({ children, ...props }) => {
   return (
     <button
