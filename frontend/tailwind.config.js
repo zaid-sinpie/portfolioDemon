@@ -8,9 +8,24 @@ export default {
           "0%": { transform: "translateY(-100%)", opacity: 0 },
           "100%": { transform: "translateY(0)", opacity: 1 },
         },
+        slideLeft: {
+          "0%": { transform: "translateX(100%)", opacity: 0 },
+          "100%": { transform: "translateX(0)", opacity: 1 },
+        },
+        slideRight: {
+          "0%": { transform: "translateX(-100%)", opacity: 0 },
+          "100%": { transform: "translateX(0)", opacity: 1 },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
         slideDown: "slideDown 0.5s ease-out",
+        slideLeft: "slideLeft 0.5s ease-out",
+        slideRight: "slideRight 0.5s ease-out",
+        fadeIn: "fadeIn 1s ease-in-out",
       },
       colors: {
         dark: "#000",
@@ -20,10 +35,10 @@ export default {
         text: "#fff",
         bgBlur: "#af807966",
       },
-      cursor:{
-        cursor1:"url('/cursor.svg') 12 12,auto",
-        cursorHover:"url('/cursorHover.svg') 15 15,auto"
-      }
+      cursor: {
+        cursor1: "url('/cursor.svg') 12 12,auto",
+        cursorHover: "url('/cursorHover.svg') 15 15,auto",
+      },
     },
   },
   plugins: [],

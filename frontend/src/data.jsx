@@ -90,3 +90,9 @@ export const dataForSkills = [
       "Version controlling and collaborating on projects effectively using Git and GitHub.",
   },
 ];
+
+export const slides = [
+  { id: 1, content: "Slide 1: Welcome to the Slider" },
+  { id: 2, content: "Slide 2: This is the second slide" },
+  { id: 3, content: "Slide 3: Enjoy navigating through slides" },
+];

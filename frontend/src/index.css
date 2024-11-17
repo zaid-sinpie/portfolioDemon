@@ -7,3 +7,7 @@ body {
   cursor: url("/cursor.svg"), auto;
   /* cursor: url("/herta.gif"), auto; */
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
