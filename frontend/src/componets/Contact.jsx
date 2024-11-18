@@ -8,7 +8,7 @@ const Contact = () => {
       id="contact"
       className="w-full h-screen flex flex-col gap-4 justify-center items-center"
     >
-      <div className="w-[40%] max-sm:w-full max-xl:w-full border border-textYellow rounded-sm px-10 max-sm:px-2 max-xl:px-5 py-10 flex justify-center items-center text-textYellow">
+      <div className="w-[40%] max-sm:w-full max-xl:w-full border border-textYellow rounded-sm px-10 max-sm:px-2 max-xl:px-5 py-10 flex justify-center items-center text-textYellow animateScrollAppear">
         <form
           // action="/"
           // method="POST"

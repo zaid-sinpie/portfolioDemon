@@ -20,12 +20,17 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        appear: {
+          "0%": { opacity: "0", scale: 0.5 },
+          "100%": { opacity: "1", scale: 1 },
+        },
       },
       animation: {
         slideDown: "slideDown 0.5s ease-out",
         slideLeft: "slideLeft 0.5s ease-out",
         slideRight: "slideRight 0.5s ease-out",
         fadeIn: "fadeIn 1s ease-in-out",
+        scrollAppear: "appear 5s linear",
       },
       colors: {
         dark: "#000",

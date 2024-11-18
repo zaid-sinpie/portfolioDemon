@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import {Button1} from "./UI/Buttons";
+import { Button1 } from "./UI/Buttons";
 
 const listForNav = [
   {
