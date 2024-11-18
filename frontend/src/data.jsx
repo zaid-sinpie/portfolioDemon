@@ -91,8 +91,50 @@ export const dataForSkills = [
   },
 ];
 
+import one from "./assets/one.jpg";
+import two from "./assets/two.jpg";
+import three from "./assets/three.jpg";
+import four from "./assets/four.jpg";
+
 export const slides = [
-  { id: 1, content: "Slide 1: Welcome to the Slider" },
-  { id: 2, content: "Slide 2: This is the second slide" },
-  { id: 3, content: "Slide 3: Enjoy navigating through slides" },
+  {
+    id: 1,
+    img: one,
+    content: "Slide 1: Welcome to the Slider",
+    title: "Goushala",
+    paragraph:
+      "Goushala website created using MERN stack. It utilizes React, React Router, Tailwind CSS, Node.js, and Express.js. Currently ongoing, and MongoDB will be integrated for database functionalities in the future & payment gateways are also a part of the project in future .",
+    githubLink: "https://github.com/zaid-sinpie/Goushala_SKGGG",
+    liveLink: "",
+  },
+  {
+    id: 2,
+    img: two,
+    content: "Slide 2: This is the second slide",
+    title: "Tours & Travers",
+    paragraph:
+      "The Tours & Travers web app is built using the same tools and technologies as Goushala. It leverages React, Tailwind CSS, Node.js, and Express.js, and is currently a work in progress.",
+    githubLink: "https://github.com/zaid-sinpie/Tours-Travers",
+    liveLink: "",
+  },
+  {
+    id: 3,
+    img: three,
+    content: "Slide 3: Enjoy navigating through slides",
+    title: "ToDo WebApp (MERN)",
+    paragraph:
+      "The ToDo web app is a single-page application built with React and styled using Tailwind CSS. It uses MongoDB for data storage and is fully functional. This app was developed using React and Vite.",
+    githubLink: "https://github.com/zaid-sinpie/todoMERN",
+    liveLink: "",
+  },
+  {
+    id: 4,
+    img: four,
+    content: "Slide 4: Enjoy navigating through slides",
+    title: "Tic Tac Toe Game",
+    paragraph:
+      "The Tic Tac Toe game is built with React, Vite, and CSS. It offers smooth gameplay experience, showcasing a practical implementation of React's capabilities.",
+    githubLink: "https://github.com/zaid-sinpie/TicTacToe",
+    liveLink: "https://zaid-sinpie-tictactoe.netlify.app/",
+  },
 ];
