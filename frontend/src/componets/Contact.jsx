@@ -1,11 +1,14 @@
+import { forwardRef } from "react";
+
 import Input from "./UI/Input";
 import { TextArea } from "./UI/Input";
 import { ButtonPlaneFull } from "./UI/Buttons";
 
-const Contact = () => {
+const Contact = forwardRef(function ({ id }, ref) {
   return (
     <section
-      id="contact"
+    ref={ref}
+      id={id}
       className="w-full h-screen flex flex-col gap-4 justify-center items-center"
     >
       <div className="w-[40%] max-sm:w-full max-xl:w-full border border-textYellow rounded-sm px-10 max-sm:px-2 max-xl:px-5 py-10 flex justify-center items-center text-textYellow animateScrollAppear">
@@ -27,6 +30,6 @@ const Contact = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Contact;

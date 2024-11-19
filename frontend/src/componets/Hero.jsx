@@ -1,11 +1,14 @@
+import { forwardRef } from "react";
+
 import Card from "./UI/Card";
 import { ButtonPlane, TextButton } from "./UI/Buttons";
 import { dataForCards } from "../data.jsx";
 
-const Hero = () => {
+const Hero = forwardRef(function Hero({ id }, ref) {
   return (
     <section
-      id="home"
+      ref={ref}
+      id={id}
       className="w-full h-screen flex max-sm:flex-col-reverse justify-around max-sm:justify-center items-center max-sm:item-start gap-4 max-sm:mt-20 max-sm:pb-10"
     >
       <div className="w-[20%] max-2xl:w-[40%] max-sm:w-full flex flex-col justify-around items-center gap-[2rem] max-sm:gap-4">
@@ -55,6 +58,6 @@ const Hero = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Hero;

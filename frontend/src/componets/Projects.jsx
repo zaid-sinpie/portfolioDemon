@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, forwardRef } from "react";
+
 import { ButtonPlane, TextButton } from "./UI/Buttons";
 import { slides } from "../data";
 
-const Slider = () => {
+const Slider = forwardRef(function ({ id },ref) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [animation, setAnimation] = useState("");
 
@@ -27,7 +28,10 @@ const Slider = () => {
   };
 
   return (
-    <section className="w-full h-screen flex flex-col gap-4 justify-center items-center text-text relative">
+    <section ref={ref}
+      id={id}
+      className="w-full h-screen flex flex-col gap-4 justify-center items-center text-text relative"
+    >
       <figure className="w-[80%] max-sm:w-[95%] h-[60%] max-sm:h-[80%] max-xl:h-[80%] border border-textYellow overflow-hidden relative rounded-md animateScrollAppear">
         {slides.map((slide, index) => (
           <div
@@ -73,9 +77,7 @@ const Slider = () => {
                 <div
                   key={idx}
                   className={`h-2 w-2 rounded-full bg-${
-                    currentSlide + 1 === item.id
-                      ? "textYellow"
-                      : "textYellowAlpha"
+                    currentSlide + 1 === item.id ? "textYellow" : "text"
                   }`}
                 ></div>
               );
@@ -88,6 +90,6 @@ const Slider = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Slider;
