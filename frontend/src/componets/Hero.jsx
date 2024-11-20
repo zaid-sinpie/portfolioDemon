@@ -4,7 +4,14 @@ import Card from "./UI/Card";
 import { ButtonPlane, TextButton } from "./UI/Buttons";
 import { dataForCards } from "../data.jsx";
 
-const Hero = forwardRef(function Hero({ id }, ref) {
+const Hero = forwardRef(function Hero({ id, scrollToContact }, ref) {
+  const checkResume = () => {
+    window.open(
+      "https://docs.google.com/document/d/1-d5aB_EMm4gD8xPXYXSvfXlWjt6nbNygVN5VhpCcOgA/edit?usp=sharing",
+      "_blank"
+    );
+  };
+
   return (
     <section
       ref={ref}
@@ -38,20 +45,32 @@ const Hero = forwardRef(function Hero({ id }, ref) {
           </p>
         </div>
         <div className="flex justify-center items-center gap-5">
-          <ButtonPlane>contact me</ButtonPlane>
-          <TextButton>Resume</TextButton>
+          <ButtonPlane onClick={scrollToContact}>contact me</ButtonPlane>
+          <TextButton onClick={checkResume}>Resume</TextButton>
         </div>
         <div className="flex justify-around items-center gap-4 text-textYellow text-xl">
-          <a href="#" className="cursor-cursorHover">
+          <a
+            href="https://leetcode.com/u/zaidmasuldar/"
+            target="_blank"
+            className="cursor-cursorHover"
+          >
             <i className="fa-solid fa-code hover:text-text"></i>
           </a>
-          <a href="#" className="cursor-cursorHover">
+          <a
+            href="https://github.com/zaid-sinpie"
+            target="_blank"
+            className="cursor-cursorHover"
+          >
             <i className="fa-brands fa-github hover:text-text"></i>
           </a>
-          <a href="#" className="cursor-cursorHover">
+          <a
+            href="https://www.linkedin.com/in/zaid-masuldar/"
+            target="_blank"
+            className="cursor-cursorHover"
+          >
             <i className="fa-brands fa-linkedin-in hover:text-text"></i>
           </a>
-          <a href="#" className="cursor-cursorHover">
+          <a href="#" className="cursor-cursorHover" target="_blank">
             <i className="fa-solid fa-basketball hover:text-text"></i>
           </a>
         </div>

@@ -1,13 +1,19 @@
 import { Button1 } from "./UI/Buttons";
 
 const listForNav = [
-  { title: "HOME", link: "home" },
-  { title: "SKILLS", link: "skills" },
-  { title: "PROJECT", link: "project" },
-  { title: "CONTACT", link: "contact" },
+  { title: "HOME", link: "home", value: "home" },
+  { title: "SKILLS", link: "skills", value: "skills" },
+  { title: "PROJECT", link: "projects", value: "projects" },
+  { title: "CONTACT", link: "contact", value: "contact" },
 ];
 
-const Navbar = ({ scroll, isTrue, toggle }) => {
+const Navbar = ({
+  scroll,
+  isTrue,
+  toggle,
+  currentActive,
+  setCurrentActive,
+}) => {
   return (
     <div className="w-full fixed top-0 left-0 backdrop-blur-lg z-20 animate-slideDown">
       <header className="w-full flex justify-between items-center p-5 tracking-[5px]">
@@ -21,8 +27,13 @@ const Navbar = ({ scroll, isTrue, toggle }) => {
             {listForNav.map((item, index) => (
               <li key={index}>
                 <a
-                  onClick={() => scroll(item.link)}
-                  className="font-semibold hover:underline cursor-cursorHover underline-offset-4"
+                  onClick={() => {
+                    setCurrentActive(item.value);
+                    scroll(item.link, item.value);
+                  }}
+                  className={`font-semibold hover:underline cursor-cursorHover underline-offset-4 ${
+                    currentActive === item.link ? "text-textYellow" : ""
+                  }`}
                 >
                   {item.title}
                 </a>
@@ -49,8 +60,15 @@ const Navbar = ({ scroll, isTrue, toggle }) => {
               {listForNav.map((item, index) => (
                 <li key={index}>
                   <a
-                    onClick={() => scroll(item.link)}
-                    className="font-semibold hover:underline underline-offset-4"
+                    onClick={() => {
+                      setCurrentActive(item.value);
+                      scroll(item.link, item.value);
+                    }}
+                    className={`font-semibold hover:underline underline-offset-4 ${
+                      currentActive === item.link
+                        ? "underline underline-offset-1"
+                        : ""
+                    }`}
                   >
                     {item.title}
                   </a>
