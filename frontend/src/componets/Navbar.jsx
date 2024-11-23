@@ -14,9 +14,13 @@ const Navbar = ({
   currentActive,
   setCurrentActive,
 }) => {
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText("zaidmasuldar@gmail.com");
+  };
+
   return (
     <div className="w-full fixed top-0 left-0 backdrop-blur-lg z-20 animate-slideDown">
-      <header className="w-full flex justify-between items-center p-5 tracking-[5px]">
+      <header className="w-full flex justify-between items-center p-5 tracking-[5px] relative">
         <ul>
           <h1 className="text-xl text-textYellow font-semibold cursor-cursorHover transition-all">
             DemonLord
@@ -41,7 +45,7 @@ const Navbar = ({
             ))}
           </ul>
         </nav>
-        <Button1>zaidmasuldar@gmail.com</Button1>
+        <Button1 onClick={copyToClipboard}>zaidmasuldar@gmail.com</Button1>
         <nav className="hidden max-sm:flex justify-center items-center">
           <i
             onClick={toggle}
