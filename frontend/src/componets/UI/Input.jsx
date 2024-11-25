@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = ({ id, title, type, ...props }) => {
+const Input = ({ id,name, title, type, ...props }) => {
   return (
     <div className="flex flex-col gap-2 justify-around items-start w-[80%] max-sm:w-full max-xl:w-full">
       <label
@@ -14,14 +14,14 @@ const Input = ({ id, title, type, ...props }) => {
         autoComplete="off"
         type={type ? type : "text"}
         id={id}
-        name={id}
+        name={name}
         className="w-full outline-none px-5 py-2 rounded-sm border border-textYellow bg-transparent active:cursor-cursor1 hover:cursor-cursorHover tracking-[1px]"
       />
     </div>
   );
 };
 
-export const TextArea = ({ id, title, ...props }) => {
+export const TextArea = ({ id,name, title, ...props }) => {
   return (
     <div className="flex flex-col gap-2 justify-around items-start w-[80%] max-sm:w-full max-xl:w-full">
       <label
@@ -36,7 +36,7 @@ export const TextArea = ({ id, title, ...props }) => {
         autoComplete="off"
         type="text"
         id={id}
-        name={id}
+        name={name}
         className="w-full outline-none px-5 py-2 rounded-sm border border-textYellow bg-transparent active:cursor-cursor1 hover:cursor-cursorHover tracking-[1px]"
       />
     </div>

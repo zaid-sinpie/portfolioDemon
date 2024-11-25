@@ -1,10 +1,24 @@
 import { forwardRef } from "react";
 
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+
 import Card from "./UI/Card";
 import { ButtonPlane, TextButton } from "./UI/Buttons";
 import { dataForCards } from "../data.jsx";
 
 const Hero = forwardRef(function Hero({ id, scrollToContact }, ref) {
+  const [text] = useTypewriter({
+    words: [
+      "Zaid Masuldar.",
+      "Frontend Developer.",
+      "UI/UX Designer.",
+      "MERN Stack Developer.",
+    ],
+    loop: true,
+    typeSpeed: 120,
+    deleteSpeed: 50,
+  });
+
   const checkResume = () => {
     window.open(
       "https://docs.google.com/document/d/1-d5aB_EMm4gD8xPXYXSvfXlWjt6nbNygVN5VhpCcOgA/edit?usp=sharing",
@@ -33,7 +47,8 @@ const Hero = forwardRef(function Hero({ id, scrollToContact }, ref) {
       <div className="w-[60%] max-sm:w-full max-sm:mt-[2rem] flex flex-col gap-4 justify-around items-start p-2">
         <div>
           <h1 className="text-textYellow text-5xl font-bold">
-            Hii there, <br /> I'm Demon Lord
+            Hii there, <br /> I'm {text}
+            <Cursor />
           </h1>
         </div>
         <div>

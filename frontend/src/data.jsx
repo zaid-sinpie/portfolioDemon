@@ -91,35 +91,40 @@ export const dataForSkills = [
   },
 ];
 
-import one from "./assets/one.jpg";
-import two from "./assets/two.jpg";
-import three from "./assets/three.jpg";
-import four from "./assets/four.jpg";
+// import one from "./assets/one.jpg";
+// import two from "./assets/two.jpg";
+// import three from "./assets/three.jpg";
+// import four from "./assets/four.jpg";
+import Goushala from "./assets/goushala.jpg";
+import NotFound from "./assets/notFound.jpg";
+import TicTacToe from "./assets/ticTacToe.jpg";
+import ToursAndTravers from "./assets/toursAndTravers.jpg";
+import todoMern from "./assets/todoMern.jpg";
 
 export const slides = [
   {
     id: 1,
-    img: one,
+    img: Goushala,
     content: "Slide 1: Welcome to the Slider",
     title: "Goushala",
     paragraph:
-      "Goushala website created using MERN stack. It utilizes React, React Router, Tailwind CSS, Node.js, and Express.js. Currently ongoing, and MongoDB will be integrated for database functionalities in the future & payment gateways are also a part of the project in future .",
+      "Goushala website created using MERN stack. It utilizes React, React Router, Tailwind CSS, Node.js, and Express.js. Currently ongoing, and MongoDB will be integrated for database functionalities in the future & payment gateways are also a part of the project in future. 'ONGOING'",
     githubLink: "https://github.com/zaid-sinpie/Goushala_SKGGG",
     liveLink: "",
   },
   {
     id: 2,
-    img: two,
+    img: ToursAndTravers,
     content: "Slide 2: This is the second slide",
     title: "Tours & Travers",
     paragraph:
-      "The Tours & Travers web app is built using the same tools and technologies as Goushala. It leverages React, Tailwind CSS, Node.js, and Express.js, and is currently a work in progress.",
+      "The Tours & Travers web app is for planning tours solo or group adventures. It leverages React, Tailwind CSS, Node.js, and Express.js, and is currently a work in progress. 'ONGOING'",
     githubLink: "https://github.com/zaid-sinpie/Tours-Travers",
     liveLink: "",
   },
   {
     id: 3,
-    img: three,
+    img: todoMern,
     content: "Slide 3: Enjoy navigating through slides",
     title: "ToDo WebApp (MERN)",
     paragraph:
@@ -129,7 +134,7 @@ export const slides = [
   },
   {
     id: 4,
-    img: four,
+    img: TicTacToe,
     content: "Slide 4: Enjoy navigating through slides",
     title: "Tic Tac Toe Game",
     paragraph:

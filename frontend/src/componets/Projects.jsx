@@ -3,7 +3,7 @@ import { useState, forwardRef } from "react";
 import { ButtonPlane, TextButton } from "./UI/Buttons";
 import { slides } from "../data";
 
-const Slider = forwardRef(function ({ id },ref) {
+const Slider = forwardRef(function ({ id }, ref) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [animation, setAnimation] = useState("");
 
@@ -28,11 +28,12 @@ const Slider = forwardRef(function ({ id },ref) {
   };
 
   return (
-    <section ref={ref}
+    <section
+      ref={ref}
       id={id}
       className="w-full h-screen flex flex-col gap-4 justify-center items-center text-text relative"
     >
-      <figure className="w-[80%] max-sm:w-[95%] h-[60%] max-sm:h-[80%] max-xl:h-[80%] border border-textYellow overflow-hidden relative rounded-md animateScrollAppear">
+      <figure className="w-[80%] max-sm:w-[95%] h-[60%] max-sm:h-[70%] max-xl:h-[80%] border border-textYellow overflow-hidden relative rounded-md animateScrollAppear">
         {slides.map((slide, index) => (
           <div
             key={slide.id}

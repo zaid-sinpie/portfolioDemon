@@ -1,9 +1,12 @@
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import { Button1 } from "./UI/Buttons";
 
 const listForNav = [
   { title: "HOME", link: "home", value: "home" },
   { title: "SKILLS", link: "skills", value: "skills" },
-  { title: "PROJECT", link: "projects", value: "projects" },
+  { title: "PROJECTS", link: "projects", value: "projects" },
   { title: "CONTACT", link: "contact", value: "contact" },
 ];
 
@@ -16,6 +19,7 @@ const Navbar = ({
 }) => {
   const copyToClipboard = () => {
     navigator.clipboard.writeText("zaidmasuldar@gmail.com");
+    toast.success('Email copied to clipboard!')
   };
 
   return (

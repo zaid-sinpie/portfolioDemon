@@ -1,4 +1,6 @@
 import { useRef, useState, useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+
 import Navbar from "./componets/Navbar";
 import Hero from "./componets/Hero";
 import Skills from "./componets/Skills";
@@ -79,6 +81,7 @@ const App = () => {
       <Skills ref={skillsRef} id="skills" />
       <Projects ref={projectRef} id="projects" />
       <Contact ref={contactRef} id="contact" />
+      <ToastContainer />
     </section>
   );
 };
